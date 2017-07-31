@@ -1,0 +1,91 @@
+aside
+  width: 240px
+  margin-top: 20px
+
+$padding-right: 70px
+
+.aside_title
+  width: calc(inherit - $padding-right)
+  height: 30px
+  padding-right: $padding-right
+  border-radius: 6px
+  box-shadow: -6px 0 4px -4px lightgray
+  +rac
+
+.aside_title_folder
+  background-image: url(images/aside_folder.png)
+  width: 16px
+  height: 13px
+
+.aside_title_text
+  font-weight: bold
+
+.aside_line
+  background-color: #ffd8b6
+  width: inherit
+  height: 6px
+  border-radius: 1px
+
+.aside_links
+  +c
+  padding: 5px 0
+  border-radius: 6px
+  box-shadow: -6px 6px 4px -4px lightgray
+  a 
+    padding: 5px 15px
+    font-size: 0.8em
+    color: $action-color
+    &:hover
+      color: shade($action-color, 35%)
+    &:nth-child(3)
+      color: black  
+      text-decoration: none
+
+.aside_looked
+  border-radius: 6px
+  box-shadow: -6px 6px 4px -4px lightgray
+
+.aside_looked_title
+  font-weight: bold
+  padding: 10px
+
+.aside_looked_content
+  +c  
+
+.aside_looked_content_block
+  +rsc
+
+.aside_looked_content_block_text
+  padding-top: 10px
+  width: 170px
+  a
+    color: $action-color
+    font-size: 1em
+    &:hover
+      color: shade($action-color, 35%)
+
+.aside_looked_content_block_text_buy
+  cursor: pointer
+  text-decoration: underline
+  text-decoration-style: dashed
+  color: #ff8315
+  &:hover
+    color: shade(#ff8315, 25%)      
+
+
+=looked_pic($path)
+  +size(50px)
+  background: $path no-repeat
+  margin: 10px
+  border-radius: 4px
+  box-shadow: 0 6px 4px 1px gray
+
+.aside_looked_content_block_pic_1
+  +looked_pic(url(images/looked_keramic.png))
+
+.aside_looked_content_block_pic_2
+  +looked_pic(url(images/looked_prestige.png))
+
+.aside_looked_content_block_pic_3
+  +looked_pic(url(images/looked_kito.png))
+

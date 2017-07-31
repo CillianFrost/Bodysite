@@ -1,0 +1,97 @@
+.right_catalog_title
+  height: 35px
+  border-bottom: 1px #888888 solid
+  margin-top: 15px
+  margin-left: 20px
+  margin-right: 20px
+  background: #ffffff
+  +rsc
+
+.right_catalog_title_sort
+  font-size: 1.1em
+  font-weight: bold  
+  margin-right: 15px
+
+.right_catalog_title_name
+  padding: 2px 2px 4px 2px
+  margin-right: 5px
+  border-radius: 4px
+  cursor: pointer
+  text-decoration: underline
+  text-decoration-style: dashed
+  color: #ff8315
+  &:hover
+    color: shade(#ff8315, 25%)
+
+.right_catalog_title_price  
+  padding: 2px 2px 4px 2px
+  border-radius: 4px
+  cursor: pointer
+  text-decoration: underline
+  text-decoration-style: dashed
+  color: #ff8315
+  &:hover
+    color: shade(#ff8315, 25%)
+
+.right_catalog_title_selected
+  background-color: #f07b14
+  color: white
+  &:hover
+    color: white
+
+.right_catalog_blocks
+  padding-left: 20px
+  height: 570px
+  background: #ffffff
+  +casw
+
+.right_catalog_blocks_block
+  margin-right: 130px
+  +rsc
+
+.right_catalog_blocks_block_text
+  +cbs
+  height: 105px
+  width: 180px
+  a
+    color: #4e4e4e
+    font-size: 1.1em
+    font-weight: bold
+    &:hover
+      color: shade(#4e4e4e, 45%)
+  button
+    width: 120px
+    height: 34px
+    color: white
+    font-size: 0.9em
+    font-weight: bold
+    border-radius: 6px
+    text-align: right
+    +pointer
+    background-color: #ff7813
+    background-image: url(images/catalog_cart.png)
+    background-position: 3% 50%
+    background-repeat: no-repeat
+    &:hover
+      background-color: #ff9d4c
+
+.right_catalog_blocks_block_text_price
+
+=catalog_pic($path)
+  +size(100px)
+  background: $path no-repeat
+  margin: 10px
+  border-radius: 4px
+  box-shadow: 0 6px 4px 1px gray
+
+.right_catalog_blocks_block_pic_1  
+  +catalog_pic(url(images/right_basic.png))
+
+.right_catalog_blocks_block_pic_2 
+  +catalog_pic(url(images/right_kito.png))
+
+.right_catalog_blocks_block_pic_3 
+  +catalog_pic(url(images/right_prestige.png))
+
+.right_catalog_blocks_block_pic_4  
+  +catalog_pic(url(images/right_domino.png))

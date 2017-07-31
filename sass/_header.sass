@@ -1,0 +1,56 @@
+header
+  width: 100%
+  height: 80px
+
+.header
+  +main_size
+  height: inherit
+  +rbc
+
+.header_left
+  +rac
+
+.header_left_logo
+  background-image: url(images/header_logo.png)
+  +size(47px)  
+  margin-right: 10px
+
+.header_left_text
+  line-height: 0.8em  
+
+.header_left_text_title
+  text-transform: uppercase
+  font-size: 1.5em
+  font-weight: bold
+  color: $base-color
+
+.header_left_text_text
+  font-weight: bold
+
+.header_contacts_phone
+  font-weight: bold
+
+.header_contacts
+  line-height: 1.2em  
+
+.header_contacts_recall a
+  text-decoration: underline
+  text-decoration-style: dashed
+
+.header_time
+  line-height: 1.3em
+
+.header_right
+  +fl  
+  font-size: 0.9em
+  margin-top: 10px
+
+.header_right_cart
+  background: url(images/header_cart.png) no-repeat
+  width: 26px
+  height: 25px  
+  margin: 3px 3px 0 0
+
+.header_right_text a
+  color: #ff8315
+  font-weight: bold

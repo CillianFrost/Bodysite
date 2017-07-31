@@ -1,0 +1,54 @@
+.under_wrapper
+  width: 100%
+  height: 300px
+
+.under
+  +main_size
+  height: inherit
+  +fl
+
+.under_left
+  width: 240px
+  +c
+
+.under_social
+  font-weight: bold
+  font-size: 1.1em
+  margin-left: 10px
+  margin-bottom: 10px
+
+.under_social_links
+  +rac
+  width: 210px
+
+=under_social($path)
+  +size(48px)
+  background: $path
+
+.under_social_fb
+  +under_social(url(images/facebook.png))
+
+.under_social_g
+  +under_social(url(images/gplus.png))
+
+.under_social_tw
+  +under_social(url(images/twitter.png))
+
+.under_social_vk
+  +under_social(url(images/vk.png))
+
+.under_right
+  +c
+  padding: 0 30px
+
+.under_right_title
+  font-size: 1.2em
+  font-weight: bold
+  margin-bottom: 10px
+
+.under_text
+  +fl
+  font-size: 0.9em
+
+.under_right_left
+  margin-right: 20px

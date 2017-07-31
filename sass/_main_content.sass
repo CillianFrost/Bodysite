@@ -1,0 +1,37 @@
+.main_content_wrapper
+  width: 100%
+
+.main_content
+  +main_size
+  +fl
+
+@import '_aside.sass'
+@import '_right.sass'
+
+.numbers_wrapper
+  width: 100%
+  z-index: -1
+
+.numbers
+  +res
+  +main_size
+
+.numbers_block
+  +fl
+  margin-right: 130px
+  a
+    color: $action-color
+    &:hover
+      color: shade($action-color, 35%)
+    &:first-child
+      background: #ffffff
+      border-radius: 6px
+      text-decoration: none
+      color: black
+
+.numbers_blocks
+  width: 40px
+  height: 35px
+  vertical-align: center
+  text-align: center
+    
